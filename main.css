@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Releway;
+    font-weight: 100;
+    src: url(./asset/font/Raleway-Thin.ttf);
+}
+
+@font-face {
+    font-family: Releway;
+    font-weight: 200;
+    src: url(./asset/font/Raleway-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: Releway;
+    font-weight: 300;
+    src: url(./asset/font/Raleway-Light.ttf);
+}
+
+@font-face {
+    font-family: Releway;
+    font-weight: 400;
+    src: url(./asset/font/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: Releway;
+    font-weight: 500;
+    src: url(./asset/font/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: Releway;
+    font-weight: 600;
+    src: url(./asset/font/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Releway;
+    font-weight: 700;
+    src: url(./asset/font/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: Releway;
+    font-weight: 800;
+    src: url(./asset/font/Raleway-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Releway;
+    font-weight: 900;
+    src: url(./asset/font/Raleway-Black.ttf);
+}
+
+:root {
+    --morado: #3e3657;
+    --purpura: #6667ab;
+    --amarillo: #edab35;
+    --rosa: #f5cebe;
+    --rosaclaro: #f5eee8;
+    --gris: #dbe0e3;
+    --purpuraclaro: #edf1ff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+section {
+    padding: 90px 0;
+    text-align: center;
+    margin: 0 10px 0 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+P {
+    font: 100 20px Releway;
+    color: var(--purpura);
+}
+
+.container {
+    width: 100%;
+    display: inherit;
+    max-width: 1200px;
+    justify-content: inherit;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+}
+
+.navbar-logo {
+    width: 200px;
+    height: 0;
+}
+
+.menu {
+    display: none;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    padding: 55px 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.home-img {
+    background-color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.home-img img {
+    width: 100%;
+}
+
+.home-content {
+    position: relative;
+    right: 300px;
+}
+
+.home-content img {
+    width: 900px;
+}
+
+.title {
+    width: 100%;
+    padding-bottom: 80px;
+    display: grid;
+}
+
+.title-x {
+    grid-row: 1/1;
+    grid-column: 1/1;
+}
+
+.title-primary {
+    z-index: 1;
+    font-family: Releway;
+    font-size: 50px;
+    color: var(--purpura);
+}
+
+.title-secodary {
+    z-index: 2;
+}
+
+.img-inter {
+    width: 100%;
+}
+
+.curriculum-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.curriculum-img img {
+    width: 400px;
+}
